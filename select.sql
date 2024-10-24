@@ -67,3 +67,45 @@ SELECT * from students
 SELECT * from students
         WHERE age <> 20;
 
+
+SELECT upper(first_name) from students;
+
+SELECT concat(first_name,' ',last_name) from students;
+
+SELECT length(first_name) from students;
+
+
+SELECT avg(age) from students;
+
+SELECT max(length(first_name)) from students;
+
+
+SELECT * from students
+        WHERE NOT country = 'USA';
+
+
+SELECT * from students
+WHERE email is NOT NULL;
+
+
+SELECT COALESCE(email,'Email not provided') as "Email", blood_group,first_name FROM students;
+
+
+SELECT * FROM students WHERE country IN('USA','UK','Canada');
+
+SELECT * FROM students WHERE country NOT IN('USA','UK','Canada');
+
+SELECT * FROM students 
+        WHERE dob BETWEEN '2000-01-01'AND '2004-01-01' ORDER BY dob;
+
+
+SELECT * FROM students 
+        WHERE first_name LIKE '%d';
+SELECT * FROM students 
+        WHERE first_name LIKE 'J%';
+SELECT * FROM students 
+        WHERE first_name LIKE '__n%';
+
+
+SELECT * FROM students 
+        WHERE first_name ILIKE 'j%';
