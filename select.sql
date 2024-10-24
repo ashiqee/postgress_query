@@ -1,3 +1,4 @@
+-- Active: 1729604035783@@127.0.0.1@5432@ph
 
 
 CREATE TABLE students(
@@ -12,6 +13,10 @@ CREATE TABLE students(
     blood_group VARCHAR(5),
     country VARCHAR(50)
 );
+
+DROP TABLE students;
+DROP Table courses;
+DROP Table enrollment;
 
 INSERT INTO students (first_name, last_name, age, grade, course, email, dob, blood_group, country) 
 VALUES 
@@ -29,3 +34,36 @@ SELECT email FROM students;
 SELECT email as "Student Email",age FROM students;
 
 SELECT * FROM students ORDER BY dob ASC;
+
+-- duplicate remove get unique value
+SELECT DISTINCT country from students;
+SELECT DISTINCT blood_group from students;
+
+
+-- WHERE 
+SELECT * from students
+        WHERE country = 'USA';
+
+SELECT * from students
+        WHERE grade='A' AND course ='Physics';
+
+
+SELECT * from students
+        WHERE blood_group='AB+';
+
+
+SELECT * from students
+        WHERE country = 'USA' OR country='Australia';
+
+SELECT * from students
+        WHERE (country = 'USA' OR country='Australia') and age=20;
+
+
+
+SELECT * from students
+        WHERE age >= 20;
+
+-- not EQUALS
+SELECT * from students
+        WHERE age <> 20;
+
