@@ -109,3 +109,30 @@ SELECT * FROM students
 
 SELECT * FROM students 
         WHERE first_name ILIKE 'j%';
+
+
+
+-- LIMIT OFFSET for pagination
+
+SELECT * FROM students LIMIT 3 OFFSET 2;
+
+SELECT * FROM students LIMIT 3 OFFSET 2 * 0;
+SELECT * FROM students LIMIT 3 OFFSET 2 * 1;
+SELECT * FROM students LIMIT 3 OFFSET 2 * 2;
+SELECT * FROM students LIMIT 3 OFFSET 2 * 3;
+
+
+DELETE FROM students
+        WHERE grade = 'B';
+DELETE FROM students
+        WHERE grade = 'C' AND country='USA';
+
+SELECT * FROM students;
+
+
+-- update Data 
+-- be careFull must conditon use 
+
+UPDATE students
+        SET email ='default@email.com', age = 40
+        WHERE student_id = 3;
