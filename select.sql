@@ -1,5 +1,6 @@
--- Active: 1729604035783@@127.0.0.1@5432@ph
+-- Active: 1729846484740@@127.0.0.1@5432@ph_university
 
+CREATE DATABASE ph_university;
 
 CREATE TABLE students(
     student_id SERIAL PRIMARY KEY,
@@ -136,3 +137,5 @@ SELECT * FROM students;
 UPDATE students
         SET email ='default@email.com', age = 40
         WHERE student_id = 3;
+
+        
