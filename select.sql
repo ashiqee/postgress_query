@@ -25,6 +25,12 @@ VALUES
 ('Jane', 'Smith', 22, 'B', 'Mathematics', 'jane.smith@example.com', '2001-03-22', 'A-', 'Canada'),
 ('Michael', 'Johnson', 21, 'A', 'Physics', 'michael.j@example.com', '2002-08-15', 'B+', 'UK'),
 ('Emily', 'Davis', 19, 'C', 'Engineering', 'emily.d@example.com', '2004-11-30', 'AB+', 'Australia'),
+('David', 'Miller', 23, 'B', 'Business', 'david.m@example.com', '2000-06-18', 'O-', 'Germany'),
+('Michael', 'Johnson', 21, 'A', 'Physics', 'michael.j@example.com', '2002-08-15', 'B+', 'UK'),
+('Emily', 'Davis', 19, 'C', 'Engineering', 'emily.d@example.com', '2004-11-30', 'AB+', 'Australia'),
+('David', 'Miller', 23, 'B', 'Business', 'david.m@example.com', '2000-06-18', 'O-', 'Germany'),
+('Michael', 'Johnson', 21, 'A', 'Physics', 'michael.j@example.com', '2002-08-15', 'B+', 'UK'),
+('Emily', 'Davis', 19, 'C', 'Engineering', 'emily.d@example.com', '2004-11-30', 'AB+', 'Australia'),
 ('David', 'Miller', 23, 'B', 'Business', 'david.m@example.com', '2000-06-18', 'O-', 'Germany');
 
 
@@ -138,4 +144,3 @@ UPDATE students
         SET email ='default@email.com', age = 40
         WHERE student_id = 3;
 
-        

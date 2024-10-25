@@ -29,3 +29,4 @@ SELECT * , age(CURRENT_DATE ,dob) FROM students;
 SELECT extract(MONTH FROM '2024-01-25'::date);
 
 SELECT 'y'::BOOlEAN;
+
